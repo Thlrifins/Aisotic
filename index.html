@@ -1,1 +1,50 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>หน้าหลัก | เว็บตัวอย่าง</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="user-count-display" class="top-right-count" aria-hidden="true"></div>
 
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="brand-logo">A</div>
+        <div>
+          <div style="font-weight:700">เว็บตัวอย่าง</div>
+          <div class="small">ระบบล็อกอิน / โปรไฟล์แบบง่าย</div>
+        </div>
+      </div>
+      <div class="nav-links small">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="login.html">เข้าสู่ระบบ</a>
+        <a href="register.html">สมัครสมาชิก</a>
+        <a href="profile.html">โปรไฟล์</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>ยินดีต้อนรับ</h2>
+      <p class="small">ตัวอย่างเว็บที่ใช้ HTML + CSS + JavaScript (localStorage) สำหรับเก็บข้อมูลผู้ใช้และระบบล็อกอิน</p>
+
+      <div style="margin-top:14px" id="whoami" class="small"></div>
+
+      <hr style="margin:16px 0">
+
+      <h3>ลิงก์สำคัญ</h3>
+      <div class="links">
+        <a href="register.html">→ สมัครสมาชิก</a><br>
+        <a href="login.html">→ เข้าสู่ระบบ</a><br>
+        <a href="profile.html">→ โปรไฟล์ (ต้องล็อกอิน)</a>
+      </div>
+    </div>
+
+    <div class="footer">หมายเหตุ: เก็บข้อมูลในเบราว์เซอร์เท่านั้น (localStorage). หากต้องการระบบจริงต้องมี backend และ hashing รหัสผ่าน</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
