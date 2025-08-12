@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile | เว็บตัวอย่าง</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="user-count-display" class="top-right-count" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="brand-logo">A</div>
+        <div>
+          <div style="font-weight:700">โปรไฟล์</div>
+          <div class="small">แก้ไขข้อมูลได้ยกเว้นชื่อเล่น</div>
+        </div>
+      </div>
+      <div class="nav-links small">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="login.html">เข้าสู่ระบบ</a>
+        <a href="register.html">สมัครสมาชิก</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="margin-bottom:12px">
+        ชื่อเล่น: <strong id="profile-nick">...</strong>
+      </div>
+
+      <form id="profile-form">
+        <div class="form-row">
+          <label>เพศ</label>
+          <select id="profile-gender">
+            <option value="">-- เลือกเพศ --</option>
+            <option>ชาย</option>
+            <option>หญิง</option>
+            <option>อื่นๆ</option>
+          </select>
+        </div>
+
+        <div class="form-row row">
+          <div class="col">
+            <label>วัน</label>
+            <select id="profile-day" class="sel-day"></select>
+          </div>
+          <div class="col">
+            <label>เดือน</label>
+            <select id="profile-month" class="sel-month"></select>
+          </div>
+          <div class="col">
+            <label>ปี</label>
+            <select id="profile-year" class="sel-year"></select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>สถานะ</label>
+          <input id="profile-status" type="text" placeholder="สถานะ">
+        </div>
+
+        <div class="form-row">
+          <button class="btn" type="submit">บันทึก</button>
+          <button id="logout-btn" type="button" class="logout" style="margin-left:8px">ออกจากระบบ</button>
+        </div>
+        <div id="profile-msg" class="success"></div>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
