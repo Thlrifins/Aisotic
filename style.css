@@ -1,0 +1,83 @@
+/* style.css - เบา ๆ น่ารัก ใช้ได้บนมือถือ */
+:root{
+  --accent:#4a90e2;
+  --muted:#666;
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --danger:#e85a5a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#222;
+  line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+}
+.container{
+  max-width:960px;
+  margin:28px auto;
+  padding:20px;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+.brand{display:flex;gap:12px;align-items:center}
+.brand-logo{
+  width:44px;height:44px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;
+}
+.nav-links a{
+  margin-left:8px;
+  text-decoration:none;color:var(--accent);
+}
+.card{
+  background:var(--card);
+  border-radius:10px;
+  padding:18px;
+  box-shadow:0 6px 18px rgba(20,30,50,0.06);
+}
+.small{
+  font-size:13px;color:var(--muted)
+}
+.top-right-count{
+  position:fixed;
+  right:18px;
+  top:18px;
+  background:var(--card);
+  border-radius:999px;
+  padding:6px 10px;
+  box-shadow:0 6px 18px rgba(20,30,50,0.06);
+  font-size:13px;color:var(--muted);
+}
+.form-row{margin-bottom:12px}
+label{display:block;margin-bottom:6px;font-weight:600}
+input[type="text"], input[type="password"], select {
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #e3e7ef;
+  background:transparent;
+  outline:none;
+}
+.row{display:flex;gap:12px}
+.col{flex:1}
+.btn{
+  background:var(--accent);
+  color:white;padding:10px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:600;
+}
+.btn-ghost{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+.err{color:var(--danger);font-size:13px;margin-top:6px}
+.success{color:green;font-size:13px;margin-top:6px}
+.links{margin-top:10px;font-size:14px}
+.profile-field{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.profile-field input, .profile-field select{max-width:420px}
+.logout{background:#f2f2f2;border-radius:8px;padding:8px 10px;border:0;cursor:pointer}
+.footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:640px){
+  .container{margin:16px;padding:14px}
+  .row{flex-direction:column}
+}
